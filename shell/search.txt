@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Enter a string"
+read string
+echo "Enter substring to search"
+read sstring
+if  echo "$string" | grep -q "$sstring";then
+echo "$sstring found"
+else
+echo "$sstring not found"
